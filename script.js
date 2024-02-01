@@ -1,9 +1,9 @@
-if(getCookie("api") == "")
-    addApi();
-
 let api = getCookie("api") != "" ? getCookie("api") : "";
 let city = getCookie("city") != "" ? getCookie("city") : "3093133";
 let type = getCookie("type") != "" ? getCookie("type") : "id";
+
+if(getCookie("api") == "")
+    addApi();
 
 function call(){
     let api_call = `https://api.openweathermap.org/data/2.5/weather?${type}=${city}&appid=${api}&units=metric&lang=pl`;
