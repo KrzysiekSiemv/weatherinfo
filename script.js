@@ -1,4 +1,7 @@
-let api = "{ADD_YOUR_API_KEY}";
+if(getCookie("api") == "")
+    addApi();
+
+let api = getCookie("api") != "" ? getCookie("api") : "";
 let city = getCookie("city") != "" ? getCookie("city") : "3093133";
 let type = getCookie("type") != "" ? getCookie("type") : "id";
 
@@ -66,4 +69,15 @@ function getCookie(cname) {
         }
     }
     return "";
+}
+
+function addApi(){
+    let temp_api = prompt("Podaj swoje API, które zapiszesz w ciasteczkach swojej przeglądarki:");
+
+    if(temp_api != null && temp_api != "")
+        api = temp_api;
+
+    setCookie("api", api);
+
+    call();
 }
