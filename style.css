@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content {
+    padding: 16px;
+    border-radius: 48px;
+    color: white;
+    box-shadow: 0 0 32px #000000;
+    backdrop-filter: blur(3px) brightness(60%);
+}
+
+.city-title {
+    text-align: center;
+    font-weight: 200;
+}
+
+.temperature {
+    display: inline-block;
+    margin: 16px;
+    margin-bottom: 0;
+    font-weight: 300;
+    font-size: 600%;
+}
+
+.description {
+    font-style: italic;
+    text-align: center;
+    margin: 0;
+}
+
+.feel_temp {
+    text-align: center;
+}
+
+.icon {
+    display: inline-block;
+    height: 256px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col {
+    text-align: center;
+    flex: 1 0 0%;
+}
+
+.info {
+    text-align: left;
+    margin: 4px 24px 0 24px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.info.right {
+    text-align: right;
+}
+
+.author {
+    text-align: center;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.author a {
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    font-style: normal;
+}
+
+    .author a:hover {
+        text-decoration: underline;
+    }

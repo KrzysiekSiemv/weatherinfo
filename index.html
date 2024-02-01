@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pogoda dla Twojej miejscowości!</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/e4c3899c65.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="content">
+            <h2 class="city-title" onclick="changeCity()"><span id="cityTitle">Łódź, Polnd</span></h2>
+            <div class="row">
+                <img src="" alt="" class="icon" id="icon">
+                <div>
+                    <h2 class="temperature" id="temp">20°C</h2>
+                    <h4 class="description" id="desc">opis</h4>
+                </div>
+            </div>
+            <h3 class="feel_temp" id="feel_temp">Odczuwalne: 4</h3>
+            <div class="row">
+                <div class="col">
+                    <p class="info" id="min_temp"></p>
+                    <p class="info" id="max_temp"></p>
+                    <p class="info" id="pressure"></p>
+                </div>
+                <div class="col">
+                    <p class="info right" id="humidity"></p>
+                    <p class="info right" id="wind"></p>
+                    <p class="info right" id="clouds"></p>
+                </div>
+            </div>
+            <br>
+            <h4 class="author">Stworzone przez <a href="https://www.smaga.me">Krzysztof Smaga</a><br>Wykorzystano: <a href="https://openweathermap.org">OpenWeatherMap API</a></h4>
+        </div>
+    </div>
+</body>
+</html>
